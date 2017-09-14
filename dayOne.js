@@ -19,15 +19,10 @@ const input = '((((()(()(((((((()))(((()((((()())(())()(((()((((((()((()(()(((()
 const countFloors = (input) => {
 	let floors = 0
 
-	input.forEach((char) => {
+	input.split('').map((char) => {
 		char === '(' ? floors++ : floors--
 	})
 	return floors
-
-	// input.toArray().map((item) =>{
-	// 	item === '(' ? count++ : count--
-	// })
-	// return count
 }
 
 countFloors(input)
