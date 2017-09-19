@@ -44,7 +44,6 @@ mapHouseVisitsWithRobo = (movements) => {
   let santaHouse = Array.from(new Set(moveObj[0]))
   let robitHouse = Array.from(new Set(moveObj[1]))
 
-
   let totalVisited = Array.from(new Set(santaHouse.concat(robitHouse)))
   console.log(`${santaHouse.length} lucky houses will receive a visit from Sandy Claws ${robitHouse.length} lucky houses will receive a visit from ROBIT for a Total of ${totalVisited.length} houses visited.`)
 }
