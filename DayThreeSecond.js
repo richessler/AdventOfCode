@@ -28,17 +28,14 @@ mapHouseVisitsWithRobo = (movements) => {
 
     if (move === north){
       y = y + 1
-      moveObj[index].push([x, y].toString())
     } else if (move === south) {
       y = y - 1
-      moveObj[index].push([x, y].toString())
     } else if (move === east) {
       x = x + 1
-      moveObj[index].push([x, y].toString())
     } else {
       x = x - 1
-      moveObj[index].push([x, y].toString())
     }
+    moveObj[index].push([x, y].toString())
   }
 
   let santaHouse = Array.from(new Set(moveObj[0]))
